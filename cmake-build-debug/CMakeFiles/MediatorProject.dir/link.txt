@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/MediatorProject.dir/main.cpp.o CMakeFiles/MediatorProject.dir/Mediator.cpp.o CMakeFiles/MediatorProject.dir/MediatorPacket.cpp.o  -o MediatorProject.exe -Wl,--out-implib,libMediatorProject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
