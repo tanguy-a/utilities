@@ -9,7 +9,7 @@ int main() {
     std::cout << "Get Line: "<< std::endl;
     std::getline(std::cin, line);
 
-    IMediator *mediator = new Mediator();
+    std::shared_ptr<IMediator> mediator(new Mediator());
     Agent agent("name", mediator);
     agent.sendPacket(line);
     Agent agentTwo("Executer", mediator);
