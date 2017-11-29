@@ -19,11 +19,10 @@ public:
     ~MediatorPacket() = default;
 
     inline MediatorPacket& operator<<(std::string const& _packet) {packet = _packet;};
-    inline std::string const& getPacket() {return packet;};
+    inline std::string const& getPacket() const {return packet;};
     inline void setPacket(std::string const& _packet) {packet = _packet;};
 
     friend std::ostream& operator<<(std::ostream& os, const MediatorPacket& mediatorPacket);
-
 };
 
 #endif //MEDIATORPROJECT_MEDIATORPACKET_HPP
